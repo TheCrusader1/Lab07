@@ -21,8 +21,8 @@ int main()
 
 	//Create the middle
 	PhysicsRectangle middle;
-	middle.setSize(Vector2f(100, 20));
-	middle.setCenter(Vector2f(400, 400));
+	middle.setSize(Vector2f(100, 100));
+	middle.setCenter(Vector2f(400, 300));
 	middle.setStatic(true);
 	world.AddPhysicsBody(middle);
 	middle.onCollision = [&bangCount](PhysicsBodyCollisionResult result) {
